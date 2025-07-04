@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manajemen Proyek & Tugas</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Script defer agar dijalankan setelah HTML selesai di‑parse -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Manajemen Proyek & Tugas</h1>
+    <button id="themeToggle" aria-label="Toggle Dark Mode">🌙</button>
+  </header>
+
+  <main>
+    <!-- Tambah tugas -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Tulis tugas baru..." />
+      <button id="addTaskBtn">Tambah</button>
+    </div>
+
+    <!-- Belum dikerjakan -->
+    <section>
+      <h2>❌ Belum Selesai</h2>
+      <ul id="todoList" class="task-list"></ul>
+    </section>
+
+    <!-- Sudah dikerjakan -->
+    <section>
+      <h2>✅ Sudah Selesai</h2>
+      <ul id="doneList" class="task-list"></ul>
+    </section>
+  </main>
+</body>
+</html>
